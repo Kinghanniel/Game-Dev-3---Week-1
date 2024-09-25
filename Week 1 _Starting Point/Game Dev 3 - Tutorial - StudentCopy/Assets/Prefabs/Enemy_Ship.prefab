@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8449942053686942379}
   - component: {fileID: 7551349999887803631}
   - component: {fileID: 4326780760151960921}
+  - component: {fileID: 3307683155521494841}
   m_Layer: 0
   m_Name: Enemy_Ship
   m_TagString: Untagged
@@ -28,13 +29,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6935348067947489795}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.00000035762784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.93813, y: 0.93813, z: 0.93813}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &2104808170209892047
 SpriteRenderer:
@@ -145,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2931bf045d4c1c4d973ad99a5a335f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: ebd0dccd64f838544a7e9a1e3bea4070, type: 2}
 --- !u!114 &7551349999887803631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2827610674688fc4aa09698eb72e8c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: ebd0dccd64f838544a7e9a1e3bea4070, type: 2}
 --- !u!114 &4326780760151960921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,3 +175,16 @@ MonoBehaviour:
   hitFlashColor: {r: 1, g: 0.6853579, b: 0, a: 1}
   originalColor: {r: 0, g: 0, b: 0, a: 1}
   hitFlashDuration: 0.5
+--- !u!114 &3307683155521494841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935348067947489795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21791278f6635e24c9116e02b7c3a10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: ebd0dccd64f838544a7e9a1e3bea4070, type: 2}
